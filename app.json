@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Pokedex-RN",
-    "slug": "Pokedex-RN",
+    "name": "PokedexRN",
+    "slug": "PokedexRN",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,23 +18,16 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.gustaaes.PokedexRN"
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      },
-      "package": "com.gustaaes.PokedexRN"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "72027153-5bd5-426c-8770-35c781a6790b"
-      }
     }
   }
 }

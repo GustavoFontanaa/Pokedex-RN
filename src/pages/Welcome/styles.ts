@@ -7,20 +7,6 @@ export const Container = styled.View`
   `}
 `;
 
-export const Bottom = styled.View`
-  ${({ theme }) => css`
-    width: 100%;
-    height: 30%;
-    background: ${theme.colors.background};
-    opacity: 0.9;
-    padding: 20px;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    justify-content: center;
-    align-items: center;
-  `}
-`;
-
 export const Content = styled.View`
   ${({ theme }) => css`
     background: ${theme.colors.backgroundCard.water};
@@ -77,5 +63,19 @@ export const SubTitle = styled.Text`
   ${({ theme }) => css`
     color: ${theme.colors.background};
     font-size: 14px;
+  `}
+`;
+
+export const Footer = styled.View`
+  ${({ theme }) => css`
+    width: 100%;
+    height: 30%;
+    background: ${theme.colors.background};
+    opacity: 0.9;
+    padding: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    justify-content: center;
+    align-items: center;
   `}
 `;

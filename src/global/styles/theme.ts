@@ -7,6 +7,10 @@ export default {
     light_text: 'rgba(23, 23, 27, 0.6)',
     detail: '#747476',
 
+    types: {
+      water: '#4A90DA'
+    },
+
     backgroundCard: {
       grass: '#8BBE8A',
       fire: '#FFA756',
