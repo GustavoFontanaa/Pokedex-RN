@@ -1,16 +1,19 @@
 import React from 'react';
+
 import * as S from './styles';
+
 import pokeballCardImage from '../../assets/img/pokeballCard.png';
 import dotsImage from '../../assets/img/dots.png';
+import { CardAnimation } from '../CardAnimated';
 import { TouchableOpacityProps } from 'react-native';
 
-export type PokemonType = {
+type PokemonType = {
   type: {
     name: string;
   };
 };
 
-export type Pokemon = {
+type Pokemon = {
   name: string;
   url: string;
   id: number;
@@ -42,12 +45,13 @@ export function Card({ data, ...rest }: CardProps) {
 
       <S.RightSide>
         <S.PokeballCardDetail source={pokeballCardImage} />
-
-        <S.PokemonImage
-          source={{
-            uri: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`,
-          }}
-        />
+        <CardAnimation>
+          <S.PokemonImage
+            source={{
+              uri: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`,
+            }}
+          />
+        </CardAnimation>
       </S.RightSide>
     </S.PokemonCard>
   );

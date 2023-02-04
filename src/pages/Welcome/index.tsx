@@ -6,8 +6,15 @@ import pokemonAnimation from './squirtle.json';
 
 import * as S from './styles';
 import { Button } from '../../components/Button';
+import { useNavigation } from '@react-navigation/native';
 
 export function Welcome() {
+  const { navigate } = useNavigation();
+
+  function handleNavigation(): void {
+    navigate('Home');
+  }
+
   return (
     <S.Container>
       <S.Content>
@@ -22,7 +29,7 @@ export function Welcome() {
       </S.Content>
 
       <S.Footer>
-        <Button title="Iniciar" />
+        <Button title="Iniciar" onPress={handleNavigation} />
       </S.Footer>
     </S.Container>
   );
